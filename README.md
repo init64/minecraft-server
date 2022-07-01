@@ -5,13 +5,15 @@ The server uses the core [Fabric](https://fabricmc.net/), version of the game [1
 
 ## Run server
 
-```js
+```bash
 ./start.sh
 ```
 
 ## Install achievements
 
-```js
+> To get started, start the server at least once in order to use this command!
+
+```bash
 ./install.sh
 ```
 
