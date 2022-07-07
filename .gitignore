@@ -2,6 +2,8 @@ world
 logs
 versions
 .fabric
+fabricloader.log
+fabric-server-launcher.properties
 banned-ips.json
 banned-players.json
 ops.json

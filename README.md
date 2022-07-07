@@ -17,6 +17,20 @@ The server uses the core [Fabric](https://fabricmc.net/), version of the game [1
 ./install.sh
 ```
 
+## Docker run
+
+### Build
+
+```bash
+docker build -t mc-server .
+```
+
+### Run
+
+```
+docker run -p 25565:25565 -v mc-world:/server/world mc-server
+```
+
 ## Mods
 
 * Optimization
@@ -24,14 +38,16 @@ The server uses the core [Fabric](https://fabricmc.net/), version of the game [1
     * [` Lithium `](https://www.curseforge.com/minecraft/mc-mods/lithium)
     * [` ServerCore `](https://www.curseforge.com/minecraft/mc-mods/servercore)
     * [` Starlight `](https://www.curseforge.com/minecraft/mc-mods/starlight)
+    * ` c2me `
 * Generating the world
     * [` Terralith `](https://www.curseforge.com/minecraft/mc-mods/terralith)
 * Voice chat
-    * [` Simple Voice Chat `](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat)
+    * [` Plasmo Voice `](https://www.curseforge.com/minecraft/mc-mods/plasmo-voice)
+* Entertainments
+    * [` Emotecraft `](https://www.curseforge.com/minecraft/mc-mods/emotecraft)
 * Other
     * [` MiniMOTD `](https://www.curseforge.com/minecraft/mc-mods/minimotd-fabric)
 
 ## Datapacks
 
 * [` BlazeandCave's Advancements Pack `]() - Adding a lot of new achievements
-    
