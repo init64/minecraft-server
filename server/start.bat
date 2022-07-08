@@ -1,2 +1,2 @@
-java -Xmx4G -jar fabric-server-launch.jar nogui
+java -Xmx2G -jar fabric-server-launch.jar nogui
 pause
