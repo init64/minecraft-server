@@ -50,7 +50,7 @@ function installMods {
     installMod "https://mediafiles.forgecdn.net/files/3835/973/starlight-1.1.1%2Bfabric.ae22326.jar" "starlight-1.1.1.jar"
     
     # * c2me
-    installMod "https://github.com/RelativityMC/C2ME-fabric/releases/download/0.2.0%2Balpha.8/c2me-fabric-mc1.19-0.2.0+alpha.8.2.jar" "c2me-fabric-mc1.19-0.2.0+alpha.8.2.jar"
+    # installMod "https://github.com/RelativityMC/C2ME-fabric/releases/download/0.2.0%2Balpha.8/c2me-fabric-mc1.19-0.2.0+alpha.8.2.jar" "c2me-fabric-mc1.19-0.2.0+alpha.8.2.jar"
 
     # * TabTPS
     installMod "https://github.com/jpenilla/TabTPS/releases/download/v1.3.14/tabtps-fabric-mc1.19-1.3.14.jar" "tabtps-fabric-mc1.19-1.3.14.jar"
