@@ -68,6 +68,12 @@ function configs {
         rm -rf /server/config/MiniMOTD
     fi
     mv -f /server/files/MiniMOTD /server/config
+
+    # * PlasmoVoice
+    if [ -d "/server/files/PlasmoVoice" ]; then
+        rm -rf /server/config/PlasmoVoice
+    fi
+    mv -f /server/files/PlasmoVoice /server/config
 }
 
 if [ ! -d "/server/world/datapacks" ]; then
