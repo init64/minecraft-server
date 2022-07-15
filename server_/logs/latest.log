@@ -1,0 +1,368 @@
+[15:14:45] [main/INFO]: Loading Minecraft 1.19 with Fabric Loader 0.14.8
+[15:14:46] [main/INFO]: Loading 83 mods:
+	- adventure-platform-fabric 5.4.0-SNAPSHOT via minimotd-fabric
+	- c2me 0.2.0+alpha.8.2
+	- c2me-base 0.2.0+alpha.8.2 via c2me
+	- c2me-fixes-chunkio-threading-issues 0.2.0+alpha.8.2 via c2me
+	- c2me-fixes-general-threading-issues 0.2.0+alpha.8.2 via c2me
+	- c2me-fixes-worldgen-threading-issues 0.2.0+alpha.8.2 via c2me
+	- c2me-fixes-worldgen-vanilla-bugs 0.2.0+alpha.8.2 via c2me
+	- c2me-notickvd 0.2.0+alpha.8.2 via c2me
+	- c2me-opts-allocs 0.2.0+alpha.8.2 via c2me
+	- c2me-opts-chunk-access 0.2.0+alpha.8.2 via c2me
+	- c2me-opts-chunkio 0.2.0+alpha.8.2 via c2me
+	- c2me-opts-math 0.2.0+alpha.8.2 via c2me
+	- c2me-opts-scheduling 0.2.0+alpha.8.2 via c2me
+	- c2me-opts-worldgen-general 0.2.0+alpha.8.2 via c2me
+	- c2me-opts-worldgen-vanilla 0.2.0+alpha.8.2 via c2me
+	- c2me-rewrites-chunkio 0.2.0+alpha.8.2 via c2me
+	- c2me-server-utils 0.2.0+alpha.8.2 via c2me
+	- c2me-threading-chunkio 0.2.0+alpha.8.2 via c2me
+	- c2me-threading-lighting 0.2.0+alpha.8.2 via c2me
+	- c2me-threading-scheduling 0.2.0+alpha.8.2 via c2me
+	- c2me-threading-worldgen 0.2.0+alpha.8.2 via c2me
+	- com_electronwill_night-config_core 3.6.5 via c2me
+	- com_electronwill_night-config_toml 3.6.5 via c2me
+	- com_ibm_async_asyncutil 0.1.0 via c2me
+	- emotecraft 2.1.3-SNAPSHOT-build.30
+	- fabric 0.57.0+1.19
+	- fabric-api-base 0.4.9+e62f51a3a9 via fabric
+	- fabric-api-lookup-api-v1 1.6.7+9ff28f40a9 via fabric
+	- fabric-biome-api-v1 9.0.14+b2a4a624a9 via fabric
+	- fabric-command-api-v1 1.2.6+f71b366fa9 via fabric
+	- fabric-command-api-v2 2.1.2+0d55f585a9 via fabric
+	- fabric-commands-v0 0.2.23+df3654b3a9 via fabric
+	- fabric-containers-v0 0.1.27+df3654b3a9 via fabric
+	- fabric-content-registries-v0 3.2.0+07df213ea9 via fabric
+	- fabric-convention-tags-v1 1.0.8+37622d24a9 via fabric
+	- fabric-crash-report-info-v1 0.2.3+bd0a0d4aa9 via fabric
+	- fabric-data-generation-api-v1 5.1.1+a680b9b4a9 via fabric
+	- fabric-dimensions-v1 2.1.28+a6d2f785a9 via fabric
+	- fabric-entity-events-v1 1.4.16+9ff28f40a9 via fabric
+	- fabric-events-interaction-v0 0.4.26+9ff28f40a9 via fabric
+	- fabric-events-lifecycle-v0 0.2.25+df3654b3a9 via fabric
+	- fabric-game-rule-api-v1 1.0.19+18990361a9 via fabric
+	- fabric-item-api-v1 1.5.4+767db26ea9 via fabric
+	- fabric-item-groups-v0 0.3.25+9ff28f40a9 via fabric
+	- fabric-lifecycle-events-v1 2.1.0+33fbc738a9 via fabric
+	- fabric-loot-api-v2 1.1.0+03a4e568a9 via fabric
+	- fabric-loot-tables-v1 1.1.3+9e7660c6a9 via fabric
+	- fabric-message-api-v1 1.0.1+513f4a59a9 via fabric
+	- fabric-mining-level-api-v1 2.1.10+33fbc738a9 via fabric
+	- fabric-networking-api-v1 1.0.27+7fe97409a9 via fabric
+	- fabric-networking-v0 0.3.14+df3654b3a9 via fabric
+	- fabric-object-builder-api-v1 4.0.7+9ff28f40a9 via fabric
+	- fabric-particles-v1 1.0.8+dc39553aa9 via fabric
+	- fabric-permissions-api-v0 0.1-SNAPSHOT via servercore
+	- fabric-registry-sync-v0 0.9.17+23c4cfefa9 via fabric
+	- fabric-rendering-data-attachment-v1 0.3.12+9ff28f40a9 via fabric
+	- fabric-rendering-fluids-v1 3.0.5+9ff28f40a9 via fabric
+	- fabric-resource-conditions-api-v1 2.0.9+e62f51a3a9 via fabric
+	- fabric-resource-loader-v0 0.5.5+a6d2f785a9 via fabric
+	- fabric-screen-handler-api-v1 1.2.6+9ff28f40a9 via fabric
+	- fabric-transfer-api-v1 2.0.9+e62f51a3a9 via fabric
+	- fabric-transitive-access-wideners-v1 1.1.1+9e7660c6a9 via fabric
+	- fabricloader 0.14.8
+	- ferritecore 4.2.1
+	- java 17
+	- lithium 0.8.0
+	- minecraft 1.19
+	- minimotd-fabric 2.0.8
+	- net_kyori_adventure-api 4.11.0 via adventure-platform-fabric
+	- net_kyori_adventure-key 4.11.0 via adventure-platform-fabric
+	- net_kyori_adventure-platform-api 4.1.0 via adventure-platform-fabric
+	- net_kyori_adventure-text-logger-slf4j 4.11.0 via adventure-platform-fabric
+	- net_kyori_adventure-text-minimessage 4.11.0 via adventure-platform-fabric
+	- net_kyori_adventure-text-serializer-gson 4.11.0 via adventure-platform-fabric
+	- net_kyori_adventure-text-serializer-plain 4.11.0 via adventure-platform-fabric
+	- net_kyori_examination-api 1.3.0 via adventure-platform-fabric
+	- net_kyori_examination-string 1.3.0 via adventure-platform-fabric
+	- org_threadly_threadly 7.0 via c2me
+	- placeholder-api 2.0.0-beta.3+1.19 via servercore
+	- plasmo_voice 1.2.16
+	- servercore 1.3.0-1.19
+	- starlight 1.1.1+fabric.ae22326
+	- terralith 2.3
+[15:14:46] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/disks/other/Work/Servers/Minecraft/DSX%201.19/server/libraries/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
+[15:14:46] [main/INFO]: Compatibility level set to JAVA_17
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.base.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.notickvd.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.opts.allocs.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.opts.chunk_access.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.opts.chunkio.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.opts.math.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.opts.scheduling.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.server.utils.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.threading.chunkio.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.threading.lighting.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.threading.scheduling.mixin
+[15:14:47] [main/INFO]: Initializing com.ishland.c2me.threading.worldgen.mixin
+[15:14:47] [main/INFO]: Disabling com.ishland.c2me.threading.worldgen.mixin
+[15:14:47] [main/INFO]: Loaded configuration file for Lithium: 94 options available, 3 override(s) found
+[15:14:47] [main/WARN]: Reference map 'plasmovoice-fabric-refmap.json' for plasmovoice.mixins.json could not be read. If this is a development environment you can ignore this message
+[15:14:48] [main/WARN]: Force-disabling mixin 'alloc.blockstate.StateMixin' as rule 'mixin.alloc.blockstate' (added by mods [ferritecore]) disables it and children
+[15:14:48] [main/WARN]: Force-disabling mixin 'alloc.chunk_ticking.ServerChunkManagerMixin' as rule 'mixin.alloc.chunk_ticking' (added by mods [servercore]) disables it and children
+[15:14:48] [main/WARN]: Force-disabling mixin 'world.player_chunk_tick.ThreadedAnvilChunkStorageMixin' as rule 'mixin.world.player_chunk_tick' (added by mods [c2me]) disables it and children
+[15:14:58] [main/INFO]: Building unoptimized datafixer
+[15:15:12] [main/INFO]: Done initializing MiniMOTD
+[15:15:12] [main/INFO]: [ServerCore] Initializing...
+[15:15:13] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:15:13] [main/WARN]: Missing data pack file/BlazeandCave's+Advancements+Pack+1.14.1.zip
+[15:15:19] [main/INFO]: [fabric-registry-sync] Loaded registry data [file 1/4]
+[15:15:21] [main/INFO]: Loaded 7 recipes
+[15:15:22] [main/INFO]: Loaded 1179 advancements
+[15:15:24] [main/INFO]: Applied 0 biome modifications to 0 of 162 new biomes in 4.290 ms
+[15:15:24] [Server thread/INFO]: Starting minecraft server version 1.19
+[15:15:24] [Server thread/INFO]: Loading properties
+[15:15:24] [Server thread/INFO]: Default game type: SURVIVAL
+[15:15:24] [Server thread/INFO]: Generating keypair
+[15:15:24] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:15:24] [Server thread/INFO]: Using epoll channel type
+[15:15:24] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15:15:24] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[15:15:24] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[15:15:24] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[15:15:26] [Server thread/INFO]: Preparing level "world"
+[15:15:31] [Server thread/INFO]: [STDOUT]: Initializing stronghold positions, this may take a while
+[15:15:31] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:15:35] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:35] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:35] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:35] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:35] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:35] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:35] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:35] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:35] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:37] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:38] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:38] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:39] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:39] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:40] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:40] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:41] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:41] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:42] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:42] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:42] [Worker-Main-3/INFO]: [STDOUT]: Stronghold positions initialized
+[15:15:42] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:43] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:43] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:44] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:45] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:45] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:46] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:46] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:47] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:47] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:47] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:48] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:49] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:50] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:51] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:51] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:51] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:51] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:52] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:53] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:53] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:15:53] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:54] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:15:55] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:15:56] [Worker-Main-1/INFO]: Preparing spawn area: 1%
+[15:15:56] [Worker-Main-2/INFO]: Preparing spawn area: 1%
+[15:15:57] [Worker-Main-1/INFO]: Preparing spawn area: 1%
+[15:15:57] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[15:15:58] [Worker-Main-1/INFO]: Preparing spawn area: 4%
+[15:15:58] [Worker-Main-1/INFO]: Preparing spawn area: 4%
+[15:15:59] [Worker-Main-2/INFO]: Preparing spawn area: 9%
+[15:15:59] [Worker-Main-1/INFO]: Preparing spawn area: 10%
+[15:16:00] [Worker-Main-2/INFO]: Preparing spawn area: 15%
+[15:16:00] [Worker-Main-2/INFO]: Preparing spawn area: 15%
+[15:16:01] [Worker-Main-2/INFO]: Preparing spawn area: 15%
+[15:16:01] [Worker-Main-3/INFO]: Preparing spawn area: 15%
+[15:16:02] [Worker-Main-3/INFO]: Preparing spawn area: 16%
+[15:16:02] [Worker-Main-1/INFO]: Preparing spawn area: 16%
+[15:16:03] [Worker-Main-1/INFO]: Preparing spawn area: 17%
+[15:16:04] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:04] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[15:16:05] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:08] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[15:16:08] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:08] [Worker-Main-3/INFO]: Preparing spawn area: 22%
+[15:16:08] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:08] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[15:16:08] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:08] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[15:16:09] [Worker-Main-3/INFO]: Preparing spawn area: 22%
+[15:16:09] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[15:16:10] [Worker-Main-3/INFO]: Preparing spawn area: 22%
+[15:16:11] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[15:16:11] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:11] [Worker-Main-3/INFO]: Preparing spawn area: 22%
+[15:16:12] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:13] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:13] [Worker-Main-3/INFO]: Preparing spawn area: 22%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[15:16:15] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:15] [Worker-Main-3/INFO]: Preparing spawn area: 22%
+[15:16:15] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:15] [Worker-Main-3/INFO]: Preparing spawn area: 22%
+[15:16:15] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[15:16:16] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:17] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[15:16:17] [Worker-Main-1/INFO]: Preparing spawn area: 31%
+[15:16:17] [Worker-Main-3/INFO]: Preparing spawn area: 31%
+[15:16:18] [Worker-Main-3/INFO]: Preparing spawn area: 31%
+[15:16:19] [Worker-Main-3/INFO]: Preparing spawn area: 31%
+[15:16:19] [Worker-Main-1/INFO]: Preparing spawn area: 31%
+[15:16:20] [Worker-Main-1/INFO]: Preparing spawn area: 31%
+[15:16:20] [Worker-Main-2/INFO]: Preparing spawn area: 31%
+[15:16:20] [Worker-Main-1/INFO]: Preparing spawn area: 31%
+[15:16:21] [Worker-Main-2/INFO]: Preparing spawn area: 31%
+[15:16:21] [Worker-Main-3/INFO]: Preparing spawn area: 36%
+[15:16:22] [Worker-Main-1/INFO]: Preparing spawn area: 42%
+[15:16:22] [Worker-Main-3/INFO]: Preparing spawn area: 42%
+[15:16:23] [Worker-Main-2/INFO]: Preparing spawn area: 42%
+[15:16:23] [Worker-Main-2/INFO]: Preparing spawn area: 42%
+[15:16:24] [Worker-Main-2/INFO]: Preparing spawn area: 42%
+[15:16:24] [Worker-Main-1/INFO]: Preparing spawn area: 42%
+[15:16:25] [Worker-Main-1/INFO]: Preparing spawn area: 42%
+[15:16:25] [Worker-Main-1/INFO]: Preparing spawn area: 42%
+[15:16:26] [Worker-Main-1/INFO]: Preparing spawn area: 42%
+[15:16:27] [Worker-Main-3/INFO]: Preparing spawn area: 44%
+[15:16:27] [Worker-Main-3/INFO]: Preparing spawn area: 48%
+[15:16:27] [Worker-Main-1/INFO]: Preparing spawn area: 54%
+[15:16:28] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[15:16:28] [Worker-Main-3/INFO]: Preparing spawn area: 54%
+[15:16:29] [Worker-Main-1/INFO]: Preparing spawn area: 54%
+[15:16:29] [Worker-Main-3/INFO]: Preparing spawn area: 54%
+[15:16:30] [Worker-Main-3/INFO]: Preparing spawn area: 54%
+[15:16:31] [Worker-Main-1/INFO]: Preparing spawn area: 54%
+[15:16:31] [Worker-Main-2/INFO]: Preparing spawn area: 55%
+[15:16:32] [Worker-Main-1/INFO]: Preparing spawn area: 60%
+[15:16:32] [Worker-Main-2/INFO]: Preparing spawn area: 68%
+[15:16:32] [Worker-Main-2/INFO]: Preparing spawn area: 68%
+[15:16:33] [Worker-Main-3/INFO]: Preparing spawn area: 68%
+[15:16:33] [Worker-Main-1/INFO]: Preparing spawn area: 68%
+[15:16:34] [Worker-Main-2/INFO]: Preparing spawn area: 68%
+[15:16:34] [Worker-Main-3/INFO]: Preparing spawn area: 68%
+[15:16:35] [Worker-Main-1/INFO]: Preparing spawn area: 68%
+[15:16:35] [Worker-Main-1/INFO]: Preparing spawn area: 68%
+[15:16:36] [Worker-Main-2/INFO]: Preparing spawn area: 68%
+[15:16:37] [Worker-Main-3/INFO]: Preparing spawn area: 69%
+[15:16:37] [Worker-Main-2/INFO]: Preparing spawn area: 69%
+[15:16:38] [Worker-Main-3/INFO]: Preparing spawn area: 83%
+[15:16:38] [Worker-Main-2/INFO]: Preparing spawn area: 83%
+[15:16:39] [Worker-Main-3/INFO]: Preparing spawn area: 83%
+[15:16:39] [Worker-Main-3/INFO]: Preparing spawn area: 83%
+[15:16:39] [Worker-Main-1/INFO]: Preparing spawn area: 83%
+[15:16:40] [Worker-Main-3/INFO]: Preparing spawn area: 83%
+[15:16:40] [Worker-Main-1/INFO]: Preparing spawn area: 83%
+[15:16:41] [Worker-Main-2/INFO]: Preparing spawn area: 83%
+[15:16:41] [Worker-Main-1/INFO]: Preparing spawn area: 83%
+[15:16:42] [Worker-Main-3/INFO]: Preparing spawn area: 83%
+[15:16:43] [Worker-Main-3/INFO]: Preparing spawn area: 83%
+[15:16:43] [Worker-Main-1/INFO]: Preparing spawn area: 83%
+[15:16:43] [Worker-Main-3/INFO]: Preparing spawn area: 85%
+[15:16:44] [Server thread/INFO]: Time elapsed: 72922 ms
+[15:16:44] [Server thread/INFO]: Done (78.185s)! For help, type "help"
+[15:16:44] [Thread-6/INFO]: Voice UDP server started on /0.0.0.0:25565
+[15:16:46] [Server thread/INFO]: Unknown or incomplete command, see below for error
+[15:16:46] [Server thread/INFO]: <--[HERE]
+[15:16:47] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2687ms or 53 ticks behind
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/iron_man' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:challenges/all_the_blocks' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/deep_slate_nine' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/advancement_legend' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/animal_milestone' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:challenges/all_the_items' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:building/rock_collection' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/root' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/mining_milestone' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/monsters_milestone' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/adventure_milestone' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/building_milestone' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/heart_of_darkness' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:statistics/spring_in_your_step' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:building/deepslate_conspiracy' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:animal/which_came_first' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/time_to_strike' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/diam_oh_wait_no' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:monsters/root' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/hot_topic' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/time_to_mine' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/gold_rush' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:weaponry/root' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:animal/cow_tipper' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/moar_tools' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/not_chicken_mcnuggets' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/root' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:challenges/stack_all_the_items' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:animal/rainbow_collection' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/time_to_chop' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:redstone/root' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/seeing_red' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:technical/bacap_branch_end' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:potion/a_much_more_doable_challenge' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/redstone_milestone' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:redstone/engineer' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/statistics_milestone' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:building/root' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:building/stairs_no' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:building/ah_my_old_enemy' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/weaponry_milestone' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:building/torched' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:biomes/tarzan' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/eeuuwww' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:bacap/biomes_milestone' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:mining/tuff_stuff' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:statistics/the_first_night' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:statistics/root' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:technical/fail_dragon_vs' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:biomes/just_keep_swimming' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:challenges/explorer_of_worlds' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/WARN]: Ignored advancement 'blazeandcave:biomes/cold_feet' in progress file ./world/advancements/f21f62ea-1e50-3b7e-a94b-e9e66c6a0210.json - it doesn't exist anymore?
+[15:16:49] [Server thread/INFO]: heito_[/127.0.0.1:33428] logged in with entity id 57 at (-67.03327446697249, 39.0, 832.3000000119209)
+[15:16:49] [Server thread/INFO]: heito_ joined the game
+[15:17:24] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 22132ms or 442 ticks behind
+[15:18:59] [Server thread/INFO]: heito_ lost connection: Disconnected
+[15:18:59] [Server thread/INFO]: heito_ left the game
+[15:19:12] [Server thread/INFO]: Stopping server
+[15:19:12] [Thread-6/INFO]: Voice UDP server stopped
+[15:19:12] [Server thread/INFO]: Saving players
+[15:19:12] [Server thread/INFO]: Saving worlds
+[15:19:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:19:12] [Server console handler/ERROR]: Exception handling console input
+java.io.IOException: Ошибка ввода/вывода
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
+	at java.io.FileInputStream.read(FileInputStream.java:276) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:282) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:343) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:270) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:313) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:188) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:177) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:162) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:329) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:396) ~[?:?]
+	at net.minecraft.class_3176$1.run(class_3176.java:92) [server-intermediary.jar:?]
+[15:19:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:19:25] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[15:19:26] [C2ME Storage #3/INFO]: Storage thread Thread[C2ME Storage #3,5,main] stopped
+[15:19:26] [C2ME Storage #2/INFO]: Storage thread Thread[C2ME Storage #2,5,main] stopped
+[15:19:27] [C2ME Storage #1/INFO]: Storage thread Thread[C2ME Storage #1,5,main] stopped

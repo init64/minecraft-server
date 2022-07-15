@@ -22,13 +22,13 @@ The server uses the core [Fabric](https://fabricmc.net/), version of the game [1
 ### Build
 
 ```bash
-docker build -t mc-server .
+./docker.sh build
 ```
 
 ### Run
 
-```
-docker run -p 25565:25565 -v mc-world:/server/world mc-server
+```bash
+./docker.sh run
 ```
 
 ## Mods
