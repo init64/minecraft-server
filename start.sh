@@ -49,14 +49,27 @@ function installMods {
     # * Starlight
     installMod "https://mediafiles.forgecdn.net/files/3835/973/starlight-1.1.1%2Bfabric.ae22326.jar" "starlight-1.1.1.jar"
     
-    # * c2me
+    # # * c2me
     # installMod "https://github.com/RelativityMC/C2ME-fabric/releases/download/0.2.0%2Balpha.8/c2me-fabric-mc1.19-0.2.0+alpha.8.2.jar" "c2me-fabric-mc1.19-0.2.0+alpha.8.2.jar"
-
-    # * TabTPS
-    installMod "https://github.com/jpenilla/TabTPS/releases/download/v1.3.14/tabtps-fabric-mc1.19-1.3.14.jar" "tabtps-fabric-mc1.19-1.3.14.jar"
 
     # * SkinRestorer
     installMod "https://mediafiles.forgecdn.net/files/3826/618/skin-restorer-1.1.0.jar" "skin-restorer-1.1.0.jar"
+
+    # * Carpet / Carpet Extra
+    installMod "https://mediafiles.forgecdn.net/files/3820/789/fabric-carpet-1.19-1.4.79%2Bv220607.jar" "fabric-carpet-1.19.jar"
+    installMod "https://mediafiles.forgecdn.net/files/3820/880/carpet-extra-1.19-1.4.79.jar" "carpet-extra-1.19-1.4.79.jar"
+
+    # * Carpet
+    installMod "https://github.com/TISUnion/Carpet-TIS-Addition/releases/download/v1.37.0/carpet-tis-addition-mc1.19-v1.37.0.jar" "carpet-tis-addition-mc1.19-v1.37.0.jar"
+
+    # * Chunky
+    installMod "https://cdn.modrinth.com/data/fALzjamp/versions/1.2.217/Chunky-1.2.217.jar" "Chunky-1.2.217.jar"
+
+    # * Lazydfu
+    installMod "https://cdn.modrinth.com/data/hvFnDODi/versions/0.1.3/lazydfu-0.1.3.jar" "lazydfu-0.1.3.jar"
+
+    # * Krypton
+    installMod "https://cdn.modrinth.com/data/fQEb0iXm/versions/0.2.0/krypton-0.2.0.jar" "krypton-0.2.0.jar"
 
     # ? Install emotes for mod Emotecraft
     mv /server/files/emotes /server/emotes
