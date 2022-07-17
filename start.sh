@@ -1,138 +1,116 @@
 #!/bin/sh -e
 
-function installAchievements {
-    if [ ! -d "/server/world/datapacks/BlazeandCave-Advancements" ]; then
+WORKDIR="/server"
+
+function installAchievement {
+    if [ ! -d "$WORKDIR/world/datapacks/${2}" ]; then
         echo "The installation of new achievements has begun."
-        unzip /server/files/datapacks/BlazeandCaves-Advancements-Pack-1.14.5.zip -d /server/files/datapacks/BlazeandCave-Advancements
-        mv /server/files/datapacks/BlazeandCave-Advancements /server/world/datapacks
-        echo "New achievements have been installed :D"
+        unzip $WORKDIR/files/datapacks/${1} -d $WORKDIR/files/datapacks/${2}
+        mv $WORKDIR/files/datapacks/${2} $WORKDIR/world/datapacks
+        echo "New achievements have been installed: ${2}"
     fi
 }
 
-function installMods {
-    if [ ! -d "/server/mods" ]; then
-        mkdir /server/mods
+function installPlugins {
+    if [ ! -d "$WORKDIR/plugins" ]; then
+        mkdir $WORKDIR/plugins
     fi
 
-    function installMod {
-        if [ ! -e "/server/mods/${2}" ]; then
+    function installPlugin {
+        if [ ! -e "$WORKDIR/plugins/${2}" ]; then
             curl -L -o ./${2} ${1}
-            mv ./${2} /server/mods
-            echo "The mod was successfully installed: ${2}"
+            mv ./${2} $WORKDIR/plugins
+            echo "The plugin was successfully installed: ${2}"
         fi
     }
 
-    # * FabricAPI
-    installMod "https://github.com/FabricMC/fabric/releases/download/0.57.0%2B1.19/fabric-api-0.57.0+1.19.jar" "fabric-api-0.57.0+1.19.jar"
+    installPlugin "https://github.com/plasmoapp/plasmo-voice/releases/download/1.0.10-spigot/plasmovoice-server-1.0.10.jar" "plasmovoice-server-1.0.10.jar"
 
-    # * Terralith
-    installMod "https://mediafiles.forgecdn.net/files/3874/530/Terralith_v2.3.2.jar" "Terralith_v2.3.2.jar"
+    installPlugin "https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar" "ProtocolLib.jar"
 
-    # * PlasmoVoice
-    installMod "https://mediafiles.forgecdn.net/files/3863/790/plasmovoice-fabric-1.19-1.2.17.jar" "plasmovoice-fabric-1.19-1.2.17.jar"
+    installPlugin "https://github.com/KosmX/emotes/releases/download/2.1.3-SNAPSHOT-build.32/emotecraft-2.1.3-SNAPSHOT-build.31-bukkit.jar" "emotecraft-2.1.3.jar"
 
-    # * EmoteCraft
-    installMod "https://mediafiles.forgecdn.net/files/3828/191/emotecraft-for-MC1.19-2.1.3-SNAPSHOT-build.30-fabric.jar" "emotecraft-for-MC1.19-2.1.3-SNAPSHOT-build.30-fabric.jar"
+    installPlugin "https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.8/minimotd-bukkit-2.0.8.jar" "mini-motd.jar"
 
-    # * FerriteCore
-    installMod "https://mediafiles.forgecdn.net/files/3824/694/ferritecore-5.0.0-fabric.jar" "ferritecore-5.0.0-fabric.jar"
+    installPlugin "https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.2.1/SkinsRestorer.jar" "SkinsRestorer.jar"
 
-    # * Lithium
-    installMod "https://github.com/CaffeineMC/lithium-fabric/releases/download/mc1.19-0.8.1/lithium-fabric-mc1.19-0.8.1-api.jar" "lithium-fabric-mc1.19-0.8.1.jar"
+    # installPlugin "https://github.com/KiraPixel/PixeSlTab/releases/download/1.19/PixeSlTab-1.19-rel.6.jar" "PixeSl.jar"
 
-    # * MiniMOTD
-    installMod "https://mediafiles.forgecdn.net/files/3838/355/minimotd-fabric-mc1.19-2.0.8.jar" "minimotd-fabric-mc1.19-2.0.8.jar"
-    
-    # * ServerCore
-    installMod "https://mediafiles.forgecdn.net/files/3821/394/servercore-1.3.0-1.19.jar" "servercore-1.3.0-1.19.jar"
+    installPlugin "https://github.com/montlikadani/TabList/releases/download/v5.6.3/TabList-bukkit-5.6.3.jar" "TabList-bukkit-5.6.3.jar"
 
-    # * Starlight
-    installMod "https://mediafiles.forgecdn.net/files/3835/973/starlight-1.1.1%2Bfabric.ae22326.jar" "starlight-1.1.1.jar"
-    
-    # # * c2me
-    # installMod "https://github.com/RelativityMC/C2ME-fabric/releases/download/0.2.0%2Balpha.8/c2me-fabric-mc1.19-0.2.0+alpha.8.2.jar" "c2me-fabric-mc1.19-0.2.0+alpha.8.2.jar"
+    mv ./files/plugins/emotecraft-2.1.3.jar $WORKDIR/plugins
 
-    # * SkinRestorer
-    installMod "https://mediafiles.forgecdn.net/files/3826/618/skin-restorer-1.1.0.jar" "skin-restorer-1.1.0.jar"
-
-    # * Carpet / Carpet Extra
-    installMod "https://mediafiles.forgecdn.net/files/3820/789/fabric-carpet-1.19-1.4.79%2Bv220607.jar" "fabric-carpet-1.19.jar"
-    installMod "https://mediafiles.forgecdn.net/files/3820/880/carpet-extra-1.19-1.4.79.jar" "carpet-extra-1.19-1.4.79.jar"
-
-    # * Carpet
-    installMod "https://github.com/TISUnion/Carpet-TIS-Addition/releases/download/v1.37.0/carpet-tis-addition-mc1.19-v1.37.0.jar" "carpet-tis-addition-mc1.19-v1.37.0.jar"
-
-    # * Chunky
-    installMod "https://cdn.modrinth.com/data/fALzjamp/versions/1.2.217/Chunky-1.2.217.jar" "Chunky-1.2.217.jar"
-
-    # * Lazydfu
-    installMod "https://cdn.modrinth.com/data/hvFnDODi/versions/0.1.3/lazydfu-0.1.3.jar" "lazydfu-0.1.3.jar"
-
-    # * Krypton
-    installMod "https://cdn.modrinth.com/data/fQEb0iXm/versions/0.2.0/krypton-0.2.0.jar" "krypton-0.2.0.jar"
+    # ? Install configs for TabList
+    mv $WORKDIR/files/TabList $WORKDIR/plugins
 
     # ? Install emotes for mod Emotecraft
-    mv /server/files/emotes /server/emotes
+    mv $WORKDIR/files/emotes $WORKDIR
+
+    ls ./plugins -a
+    ls -a
+    ls ./emotes -a
 }
+
+if [ ! -d "$WORKDIR/world/datapacks" ]; then
+    if [ ! -d "$WORKDIR/world" ]; then
+        mkdir $WORKDIR/world
+    fi
+
+    mkdir $WORKDIR/world/datapacks
+fi
 
 function configs {
     # * MiniMOTD
-    if [ -d "/server/files/MiniMOTD" ]; then
-        rm -rf /server/config/MiniMOTD
+    if [ -d "$WORKDIR/files/MiniMOTD" ]; then
+        rm -rf $WORKDIR/plugins/MiniMOTD
     fi
-    mv -f /server/files/MiniMOTD /server/config
+    mv -f $WORKDIR/files/MiniMOTD $WORKDIR/plugins
 
     # * PlasmoVoice
-    if [ -d "/server/files/PlasmoVoice" ]; then
-        rm -rf /server/config/PlasmoVoice
+    if [ -d "$WORKDIR/files/PlasmoVoice" ]; then
+        rm -rf $WORKDIR/plugins/PlasmoVoice
     fi
-    mv -f /server/files/PlasmoVoice /server/config
+    mv -f $WORKDIR/files/PlasmoVoice $WORKDIR/plugins
 }
 
-if [ ! -d "/server/world/datapacks" ]; then
-    if [ ! -d "/server/world" ]; then
-        mkdir /server/world
-    fi
+installAchievement "BlazeandCaves-Advancements-Pack-1.14.5.zip" "BlazeandCave-Advancements"
 
-    mkdir /server/world/datapacks
-fi
+installAchievement "terralith-v2-3-2a.zip" "Terralith"
 
-installAchievements
-
-installMods
+installPlugins
 
 configs
 
-if [ ! -d "/server/config" ]; then
-    mkdir /server/config
+if [ ! -d "$WORKDIR/config" ]; then
+    mkdir $WORKDIR/config
 fi
 
-if [ ! -f "/server/config/banned-ips.json" ]; then
-    echo "[]" >> /server/config/banned-ips.json
+if [ ! -f "$WORKDIR/config/banned-ips.json" ]; then
+    echo "[]" >> $WORKDIR/config/banned-ips.json
 fi
 
-if [ ! -f "/server/config/banned-players.json" ]; then
-    echo "[]" >> /server/config/banned-players.json
+if [ ! -f "$WORKDIR/config/banned-players.json" ]; then
+    echo "[]" >> $WORKDIR/config/banned-players.json
 fi
 
-if [ ! -f "/server/config/usercache.json" ]; then
-    echo "[]" >> /server/config/usercache.json
+if [ ! -f "$WORKDIR/config/usercache.json" ]; then
+    echo "[]" >> $WORKDIR/config/usercache.json
 fi
 
-if [ ! -f "/server/config/whitelist.json" ]; then
-    echo "[]" >> /server/config/whitelist.json
+if [ ! -f "$WORKDIR/config/whitelist.json" ]; then
+    echo "[]" >> $WORKDIR/config/whitelist.json
 fi
 
-if [ ! -f "/server/config/ops.json" ]; then
-    echo "[]" >> /server/config/ops.json
+if [ ! -f "$WORKDIR/config/ops.json" ]; then
+    echo "[]" >> $WORKDIR/config/ops.json
 fi
 
-ln -s /server/config/banned-ips.json /server/banned-ips.json
-ln -s /server/config/banned-players.json /server/banned-players.json
-ln -s /server/config/usercache.json /server/usercache.json
-ln -s /server/config/whitelist.json /server/whitelist.json
-ln -s /server/config/ops.json /server/ops.json
+ln -s $WORKDIR/config/banned-ips.json $WORKDIR/banned-ips.json
+ln -s $WORKDIR/config/banned-players.json $WORKDIR/banned-players.json
+ln -s $WORKDIR/config/usercache.json $WORKDIR/usercache.json
+ln -s $WORKDIR/config/whitelist.json $WORKDIR/whitelist.json
+ln -s $WORKDIR/config/ops.json $WORKDIR/ops.json
 
-eval "echo \"$(cat ./server.properties)\"" > /server/server.properties
+eval "echo \"$(cat ./server.properties)\"" > $WORKDIR/server.properties
 
-java -Xmx${JAVA_MEMORY} -Xms${JAVA_MEMORY} -Dfml.queryResult=confirm -jar fabric-server-launch.jar nogui
+java -Xmx${JAVA_MEMORY} -Xms${JAVA_MEMORY} -Dfml.queryResult=confirm -jar paper.jar --nogui

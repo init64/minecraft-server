@@ -5,7 +5,8 @@ function build {
 }
 
 function run {
-    docker run --rm -p 25565:25565/tcp -p 25565:25565/udp -v "$(pwd)"/world:/server/world -v "$(pwd)"/config:/server/config -d -it mc-server
+    # -v "$(pwd)"/world:/server/world 
+    docker run --rm -p 25565:25565/tcp -p 25565:25565/udp -v "$(pwd)"/config:/server/config -it mc-server
 }
 
 if [ "$1" == "build" ]

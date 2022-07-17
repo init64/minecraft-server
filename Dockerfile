@@ -1,20 +1,17 @@
 FROM alpine:3.14
 
 RUN echo "https://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
-RUN apk update; apk add openjdk17-jdk curl git
+RUN apk update; apk add openjdk17-jdk curl git wget
 
 WORKDIR /server
 
-RUN curl -L -o fabric-installer.jar https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.0/fabric-installer-0.11.0.jar && \
-    java -jar fabric-installer.jar server -downloadMinecraft -mcversion 1.19 \
-    rm -rf fabric-installer.jar
+RUN wget https://api.papermc.io/v2/projects/paper/versions/1.19/builds/61/downloads/paper-1.19-61.jar -O paper.jar
 
 COPY ./eula.txt /server/eula.txt
 COPY ./server.properties /server/server.properties
 COPY ./start.sh /server/start.sh
 
 COPY ./files /server/files
-
 
 ENV MINECRAFT_PORT 25565
 ENV RCON_PORT 25575
@@ -54,6 +51,8 @@ ENV ONLINE_MODE false
 ENV MAX_BUILD_HEIGHT 512
 
 ENV PREVENT_PROXY_CONNECTION false
+
+ENV SYNC_CHUNK_WRITES false
 
 
 EXPOSE 25565/tcp
