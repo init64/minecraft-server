@@ -26,7 +26,7 @@ function installMods {
     installMod "https://github.com/FabricMC/fabric/releases/download/0.57.0%2B1.19/fabric-api-0.57.0+1.19.jar" "fabric-api-0.57.0+1.19.jar"
 
     # * Terralith
-    installMod "https://mediafiles.forgecdn.net/files/3874/530/Terralith_v2.3.2.jar" "Terralith_v2.3.2.jar"
+    installMod "https://mediafiles.forgecdn.net/files/3902/643/Terralith_v2.3.3.jar" "Terralith_v2.3.3.jar"
 
     # * PlasmoVoice
     installMod "https://mediafiles.forgecdn.net/files/3863/790/plasmovoice-fabric-1.19-1.2.17.jar" "plasmovoice-fabric-1.19-1.2.17.jar"
