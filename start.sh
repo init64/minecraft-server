@@ -74,9 +74,6 @@ function installMods {
     # * Core-protect 
     installMod "https://www.spigotmc.org/resources/coreprotect.8631/download?version=446084" "core-protect.jar"
 
-    # * Openinv
-    installMod "https://dl4.9minecraft.net/index.php?act=download&id=1666531984&hash=638b7ffc4c7b3" "openinv.jar"
-
     # * Gsit
     installMod "https://www.spigotmc.org/resources/gsit-modern-sit-seat-and-chair-lay-and-crawl-plugin-1-13-x-1-19-x.62325/download?version=475957" "gsit.jar"
 
