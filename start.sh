@@ -24,15 +24,6 @@ function installMods {
 
     # * SkinRestorer
     installMod "https://mediafiles.forgecdn.net/files/3826/618/skin-restorer-1.1.0.jar" "skin-restorer-1.1.0.jar"
-
-    # * Core-protect 
-    installMod "https://www.spigotmc.org/resources/coreprotect.8631/download?version=446084" "core-protect.jar"
-
-    # * Openinv
-    installMod "https://dl4.9minecraft.net/index.php?act=download&id=1666531984&hash=638b7ffc4c7b3" "openinv.jar"
-
-    # ? Install emotes for mod Emotecraft
-    mv /server/files/emotes /server/emotes
 }
 
 function configs {
