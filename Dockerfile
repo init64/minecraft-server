@@ -6,7 +6,7 @@ RUN apk update; apk add openjdk17-jdk curl git
 WORKDIR /server
 
 RUN curl -L -o fabric-installer.jar https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.0/fabric-installer-0.11.0.jar && \
-    java -jar fabric-installer.jar server -downloadMinecraft -mcversion 1.19 \
+    java -jar fabric-installer.jar server -downloadMinecraft -mcversion 1.16.5 \
     rm -rf fabric-installer.jar
 
 COPY ./eula.txt /server/eula.txt
@@ -18,7 +18,7 @@ COPY ./files /server/files
 
 ENV MINECRAFT_PORT 25565
 ENV RCON_PORT 25575
-ENV JAVA_MEMORY 3G
+ENV JAVA_MEMORY 2G
 ENV RCON_ENABLED false
 ENV WHITELIST_ENABLED false
 ENV ALLOW_NETHER true
