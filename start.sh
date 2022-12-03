@@ -71,12 +71,6 @@ function installMods {
     # * Krypton
     installMod "https://cdn.modrinth.com/data/fQEb0iXm/versions/0.2.0/krypton-0.2.0.jar" "krypton-0.2.0.jar"
 
-    # * Core-protect 
-    installMod "https://www.spigotmc.org/resources/coreprotect.8631/download?version=446084" "core-protect.jar"
-
-    # * Gsit
-    installMod "https://www.spigotmc.org/resources/gsit-modern-sit-seat-and-chair-lay-and-crawl-plugin-1-13-x-1-19-x.62325/download?version=475957" "gsit.jar"
-
     # ? Install emotes for mod Emotecraft
     mv /server/files/emotes /server/emotes
 }
