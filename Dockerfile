@@ -5,7 +5,7 @@ RUN apk update; apk add openjdk17-jdk curl git
 
 WORKDIR /server
 
-RUN curl -L -o server.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar && \
+RUN curl -L -o server.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar 
 
 COPY ./eula.txt /server/eula.txt
 COPY ./server.properties /server/server.properties
