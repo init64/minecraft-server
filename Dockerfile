@@ -5,9 +5,7 @@ RUN apk update; apk add openjdk17-jdk curl git
 
 WORKDIR /server
 
-RUN curl -L -o fabric-installer.jar https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.0/fabric-installer-0.11.0.jar && \
-    java -jar fabric-installer.jar server -downloadMinecraft -mcversion 1.19 \
-    rm -rf fabric-installer.jar
+RUN curl -L -o server.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar && \
 
 COPY ./eula.txt /server/eula.txt
 COPY ./server.properties /server/server.properties
@@ -15,10 +13,9 @@ COPY ./start.sh /server/start.sh
 
 COPY ./files /server/files
 
-
 ENV MINECRAFT_PORT 25565
 ENV RCON_PORT 25575
-ENV JAVA_MEMORY 3G
+ENV JAVA_MEMORY 2G
 ENV RCON_ENABLED false
 ENV WHITELIST_ENABLED false
 ENV ALLOW_NETHER true
@@ -55,9 +52,6 @@ ENV MAX_BUILD_HEIGHT 512
 
 ENV PREVENT_PROXY_CONNECTION false
 
-
 EXPOSE 25565/tcp
-EXPOSE 25565/udp
-
 
 ENTRYPOINT [ "./start.sh" ]

@@ -99,8 +99,6 @@ fi
 
 installAchievements
 
-installMods
-
 configs
 
 if [ ! -d "/server/config" ]; then
@@ -135,4 +133,4 @@ ln -s /server/config/ops.json /server/ops.json
 
 eval "echo \"$(cat ./server.properties)\"" > /server/server.properties
 
-java -Xmx${JAVA_MEMORY} -Xms${JAVA_MEMORY} -Dfml.queryResult=confirm -jar fabric-server-launch.jar nogui
+java -Xmx${JAVA_MEMORY} -Xms${JAVA_MEMORY} -Dfml.queryResult=confirm -jar server.jar nogui
