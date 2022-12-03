@@ -21,9 +21,6 @@ function installMods {
             echo "The mod was successfully installed: ${2}"
         fi
     }
-
-    # * SkinRestorer
-    installMod "https://mediafiles.forgecdn.net/files/3826/618/skin-restorer-1.1.0.jar" "skin-restorer-1.1.0.jar"
 }
 
 function configs {
