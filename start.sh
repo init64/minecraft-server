@@ -21,6 +21,8 @@ function installMods {
             echo "The mod was successfully installed: ${2}"
         fi
     }
+
+    installMod "https://github.com/ElCholoGamer/userlogin/releases/download/v2.13.1-SNAPSHOT-a4251aa/UserLogin.jar" "UserLogin.jar"
 }
 
 function configs {
