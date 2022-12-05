@@ -22,7 +22,7 @@ function installMods {
         fi
     }
 
-    installMod "https://github.com/ElCholoGamer/userlogin/releases/download/v2.13.1-SNAPSHOT-a4251aa/UserLogin.jar" "UserLogin.jar"
+    installMod "https://www.curseforge.com/minecraft/mc-mods/simple-login/download/3317454/file" "simplelogin.jar"
 }
 
 function configs {
