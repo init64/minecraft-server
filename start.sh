@@ -14,15 +14,13 @@ function installMods {
         mkdir /server/mods
     fi
 
-    function installMod {
+    function installModRemotly {
         if [ ! -e "/server/mods/${2}" ]; then
-            curl -L -o ./${2} ${1}
+            curl -l -o ./${2} ${1}
             mv ./${2} /server/mods
-            echo "The mod was successfully installed: ${2}"
+            echo "the mod was successfully installed: ${2}"
         fi
     }
-
-    installMod "https://www.spigotmc.org/resources/fastlogin.14153/download?version=183586" "fastlogin.jar"
 }
 
 function configs {

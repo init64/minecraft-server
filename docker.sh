@@ -5,7 +5,10 @@ function build {
 }
 
 function run {
-    docker run --rm -p 25565:25565/tcp -p 25565:25565/udp -v "$(pwd)"/world:/server/world -v "$(pwd)"/config:/server/config -d --name mc-fabric-core -it mc-server
+    docker run \
+    --rm -p 25565:25565/tcp -p 25565:25565/udp \
+    -v "$(pwd)"/world:/server/world -v "$(pwd)"/config:/server/config -v "$(pwd)"/mods:/server/mods \
+    -d --name mc-fabric-core -it mc-server
 }
 
 if [ "$1" == "build" ]
