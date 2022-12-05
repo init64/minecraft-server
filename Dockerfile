@@ -1,7 +1,7 @@
 FROM alpine:3.14
 
 RUN echo "https://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
-RUN apk update; apk add openjdk17-jdk curl git
+RUN apk update; apk add openjdk16-jdk curl git
 
 WORKDIR /server
 
