@@ -40,4 +40,4 @@ ln -s /server/config/ops.json /server/ops.json
 
 eval "echo \"$(cat ./server.properties)\"" > /server/server.properties
 
-java -Xmx${JAVA_MEMORY} -Xms${JAVA_MEMORY} -Dfml.queryResult=confirm -jar spigot*.jar nogui
+java -Xmx${JAVA_MEMORY} -Xms${JAVA_MEMORY} -Dfml.queryResult=confirm -jar spigot-1.16.5.jar nogui
