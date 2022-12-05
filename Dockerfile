@@ -13,7 +13,6 @@ COPY ./eula.txt /server/eula.txt
 COPY ./server.properties /server/server.properties
 COPY ./start.sh /server/start.sh
 
-COPY ./files /server/files
 COPY ./mods /server/mods
 
 
