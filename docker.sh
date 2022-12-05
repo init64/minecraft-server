@@ -7,7 +7,7 @@ function build {
 function run {
     docker run \
     --rm -p 25565:25565/tcp -p 25565:25565/udp \
-    -v "$(pwd)"/world:/server/world -v "$(pwd)"/config:/server/config -v "$(pwd)"/plugins:/server/plugins \
+    -v "$(pwd)"/world:/server/world -v "$(pwd)"/config:/server/config -v "$(pwd)"/plugins:/server/plugins -v "$(pwd)"/world_nether:/server/world_nether -v "$(pwd)"/world_the_end:/server/world_the_end \
     -d --name mc-spigot-core -it mc-server
 }
 
