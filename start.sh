@@ -45,8 +45,6 @@ if [ ! -d "/server/world/datapacks" ]; then
     mkdir /server/world/datapacks
 fi
 
-installAchievements
-
 installMods
 
 configs
