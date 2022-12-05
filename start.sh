@@ -1,20 +1,12 @@
 #!/bin/sh -e
 
-function installMods {
-    if [ ! -d "/server/mods" ]; then
-        mkdir /server/mods
+function installPlugins {
+    if [ ! -d "/server/plugins" ]; then
+        mkdir /server/plugins
     fi
-
-    function installModRemotly {
-        if [ ! -e "/server/mods/${2}" ]; then
-            curl -l -o ./${2} ${1}
-            mv ./${2} /server/mods
-            echo "the mod was successfully installed: ${2}"
-        fi
-    }
 }
 
-installMods
+installPlugins
 
 if [ ! -d "/server/config" ]; then
     mkdir /server/config
@@ -48,4 +40,4 @@ ln -s /server/config/ops.json /server/ops.json
 
 eval "echo \"$(cat ./server.properties)\"" > /server/server.properties
 
-java -Xmx${JAVA_MEMORY} -Xms${JAVA_MEMORY} -Dfml.queryResult=confirm -jar fabric-server-launch.jar nogui
+java -Xmx${JAVA_MEMORY} -Xms${JAVA_MEMORY} -Dfml.queryResult=confirm -jar spigot.jar nogui

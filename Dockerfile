@@ -5,15 +5,15 @@ RUN apk update; apk add openjdk17-jdk curl git
 
 WORKDIR /server
 
-RUN curl -L -o fabric-installer.jar https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.0/fabric-installer-0.11.0.jar && \
-    java -jar fabric-installer.jar server -downloadMinecraft -mcversion 1.16.5 \
-    rm -rf fabric-installer.jar
+RUN curl -L -o buildtools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar && \
+    java -jar buildtools.jar -rev 1.16.5 \
+    rm -rf buildtools.jar
 
 COPY ./eula.txt /server/eula.txt
 COPY ./server.properties /server/server.properties
 COPY ./start.sh /server/start.sh
 
-COPY ./mods /server/mods
+COPY ./plugins /server/plugins
 
 
 ENV MINECRAFT_PORT 25565
