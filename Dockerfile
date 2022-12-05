@@ -6,7 +6,7 @@ RUN apk update; apk add openjdk17-jdk curl git
 WORKDIR /server
 
 RUN curl -L -o buildtools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar && \
-    java -jar buildtools.jar -rev 1.16.5 \
+    java -jar buildtools.jar -rev 1.16.5 && \
     rm -rf buildtools.jar
 
 COPY ./eula.txt /server/eula.txt
