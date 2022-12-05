@@ -22,7 +22,7 @@ function installMods {
         fi
     }
 
-    installMod "https://www.curseforge.com/minecraft/mc-mods/simple-login/download/3317454/file" "simplelogin.jar"
+    installMod "https://www.spigotmc.org/resources/fastlogin.14153/download?version=183586" "fastlogin.jar"
 }
 
 function configs {
